@@ -23,8 +23,8 @@ public class Rental {
 		return daysRented;
 	}
 	
-	public String getTitle() {
-		return movie.getTitle();
+	public Movie getMovie() {
+		return movie;
 	}
 	
 }
