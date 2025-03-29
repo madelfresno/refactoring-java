@@ -1,4 +1,4 @@
-package usantatecla.movies.v22;
+package usantatecla.movies.v23;
 
 import java.util.ArrayList;
 import java.util.Iterator;
@@ -30,7 +30,7 @@ public class Customer {
 		String result = "Rental Record for " + this.getName() + "\n";
 		while (rentals.hasNext()) {
 			Rental each = rentals.next();
-			result += "\t" + each.getTitle() + "\t" + String.valueOf(each.getCharge()) + "\n";
+			result += "\t" + each.getMovie().getTitle() + "\t" + String.valueOf(each.getCharge()) + "\n";
 		}
 		result += "Amount owed is " + String.valueOf(this.getTotal(Rental::getCharge)) + "\n";
 		result += "You earned " + String.valueOf((int)this.getTotal(Rental::getFrequentRenterPoints)) + " frequent renter points";

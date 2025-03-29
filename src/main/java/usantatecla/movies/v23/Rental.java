@@ -1,4 +1,4 @@
-package usantatecla.movies.v22;
+package usantatecla.movies.v23;
 
 public class Rental {
 
@@ -23,8 +23,8 @@ public class Rental {
 		return daysRented;
 	}
 	
-	public String getTitle() {
-		return movie.getTitle();
+	public Movie getMovie() {
+		return movie;
 	}
 	
 }
